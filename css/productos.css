@@ -1,0 +1,96 @@
+
+@media screen and (min-width: 0px) {
+	.productos__boards,
+	.productos__herramientas,
+	.productos__semiconductores	{
+		margin: 2rem 1rem 2rem 1rem;
+	}
+	
+	.semiconductores__cards,
+	.herraminetas__cards,
+	.boards__cards {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-row-gap: 15px;
+	}
+
+}
+
+@media screen and (min-width: 768px) {
+	.productos__boards,
+	.productos__herramientas,
+	.productos__semiconductores	{
+		margin: 2rem 2rem 2rem 2rem;
+	}
+	
+	.semiconductores__cards,
+	.herraminetas__cards,
+	.boards__cards {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.productos__boards,
+	.productos__herramientas,
+	.productos__semiconductores	{
+		margin: 2rem 2rem 2rem 2rem;
+	}
+	
+	.semiconductores__cards,
+	.herraminetas__cards,
+	.boards__cards {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		grid-column-gap: 30px;
+	}
+
+}
+
+@media screen and (min-width: 1440px) {
+	.productos__boards,
+	.productos__herramientas,
+	.productos__semiconductores	{
+		margin: 2rem 5rem 2rem 5rem;
+	}
+	
+	.semiconductores__cards,
+	.herraminetas__cards,
+	.boards__cards {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		grid-column-gap: 60px;
+	}
+}
+
+.container__productos {
+	display: block;
+}
+
+.semiconductores__info,
+.herraminetas__info,
+.boards__info {
+	margin: 1rem 0 1rem 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: 'Kodchasan', sans-serif;
+}
+
+.semiconductores__info h3,
+.herraminetas__info h3,
+.boards__info h3 {
+	font-size: 1.5rem;
+	color: blue;
+	font-weight: bold;
+}
+
+.semiconductores__info div,
+.herraminetas__info div,
+.boards__info div {
+	font-size: 1rem;
+	color: blue;
+}
+
+

@@ -1,0 +1,39 @@
+
+@media screen and (min-width: 0px) {
+	.container__login {
+		margin: 2rem 1rem;
+	}
+	
+	.formulario__login {
+		margin: 5px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.container__login {
+		margin: 2rem 5rem;
+	}
+	
+	.formulario__login {
+		margin: 0 100px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.container__login {
+		margin: 2rem 5rem;
+	}
+
+	.formulario__login {
+		margin: 0 300px;
+	}
+}
+
+.container__login {
+	display: none;
+}	
+
+.formulario__login {
+	text-align: center;
+}
+

@@ -1,0 +1,3 @@
+PAGINA DE E-COMMERCE DE ELEMENTOS ELECTRONICOS CON TIPO CARRUSEL 
+pagina de e-commerce para elementos de tegnologia con carrito de compras con foto articulo precio vinculo a descripcion
+Cuenta con base de datos

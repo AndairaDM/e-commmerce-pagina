@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<title>E-commerce alura</title>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+		<link rel="shortcut icon" href="/img/ariLogo.ico" type="image/x-icon">
+		<link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@200;400&family=Train+One&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/banner.css">
+		<link rel="stylesheet" href="css/productos.css">
+		<link rel="stylesheet" href="css/formulario.css">
+		<link rel="stylesheet" href="css/login.css">
+		<link rel="stylesheet" href="css/all_productos.css">
+		<link rel="stylesheet" href="css/addproducto.css">
+		<link rel="stylesheet" href="css/contacto.css">
+		<link rel="stylesheet" href="css/footer.css">
+		<link rel="stylesheet" href="css/modal.css">
+		<link rel="stylesheet" href="css/update.css">
+	</head>
+<body>
+	<section class="container__header">
+		<div class="header">
+			<div class="header__logo">
+				<img class="logo" src="img/logo_alura.png">
+			</div>
+			<div class="header__search">
+				<input class="search__input" type="search" placeholder="¿Que estas buscando?"/>
+				<button type="submit" class="search__icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+			</div>
+			<div class="header__btn" id="login">
+				<span class="icon__btn">
+					<i class="fa-solid fa-right-to-bracket"></i>
+				</span>
+				<label class="login__label">Registrate</label>
+			</div>
+			<div class="header__btn" id="back">
+				<span class="icon__btn">
+					<i class="fa-solid fa-rotate-left"></i>
+				</span>
+				<label class="login__label">Volver</label>
+			</div>
+		<!--	<div class="header__btn" id="logout">
+				<span class="icon__btn">
+					<i class="fa-solid fa-right-from-bracket"></i>
+				</span>
+				<label class="login__label">logout</label>
+			</div>
+			<div class="header__btn" id="menu">
+				<span class="icon__btn">
+					<i class="fa-solid fa-building-user"></i>
+				</span>
+				<label class="login__label">admin</label>
+			</div>-->
+		</div>
+	</section>
+	
+	<section class="container__banner">
+		<div class="banner__descuentos">
+			<div class="descuento__producto">
+				<img class="descuentos__img" src="img/boards/s-l1600(6).jpg" alt="arduino-nano">
+			</div>	
+			<div class="descuentos__comemts">
+				<h1>Febrero promocional</h1>
+				<p>productos selecciondos con 33% de descuento</p>
+				<div class="descuentos__ir-a">
+					<label>mis</label>
+					<a href="#"></a>  compras
+					<span><i class="fa-solid fa-bag-shopping"></i></span>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="container__productos">
+	
+		<div class="productos__boards">
+			<div class="boards__info">
+				<h3>Boards y mother´<section></section></h3>
+				<div>
+					<span>ver todo</span>
+					<i class="fa-solid fa-square-caret-right"></i>
+				</div>
+			</div>	
+			<div class="boards__cards" data-boards>	</div>
+		</div>
+		
+		<div class="productos__herramientas">
+			<div class="herraminetas__info">
+				<h3>Herramientas</h3>
+				<div>
+					<span>ver todo</span>
+					<i class="fa-solid fa-square-caret-right"></i>
+				</div>
+			</div>	
+			<div class="herraminetas__cards" data-tools></div>
+		</div>
+		
+		<div class="productos__semiconductores">
+			<div class="semiconductores__info">
+				<h3>Semiconductores</h3>
+				<div>
+					<span>ver todo</span>
+					<i class="fa-solid fa-square-caret-right"></i>
+				</div>
+			</div>	
+			<div class="semiconductores__cards" data-semiconductores></div>
+		</div>
+	</section>
+
+	<section class="container__login">
+		<div class="formulario__login">
+			<div class="formulario__titulo">
+				<label>Iniciar Sesion</label>
+			</div>
+			<form class="formulario" id="form-login">
+				<div class="casilla__input">
+					<input type="text" class="input" placeholder=" " id="correo" name="correo" required>
+					<span class="label">Usuario</span>
+				</div>
+				<div class="casilla__input">
+					<input type="password" class="input" placeholder=" " id="password" name="password" required>
+					<span class="label">Password</span>
+				</div>
+				<button type="submit" class="button" id="login__in">Entrar</button>	
+			</form>
+		</div>
+	</section>
+
+	<section class="container__all-productos">
+		<div class="all-productos__cards">
+			<div class="cards__info">
+				<h3>Todos los productos</h3>
+				<button class="cards__agregar">Agregar producto</button>
+			</div>	
+			<div class="cards__all-stock" data-all_productos>	</div>
+		</div>
+	</section>
+	
+	<section class="container__add-producto">
+		<div class="formulario__producto">
+			<div class="formulario__titulo">
+				<label>Agregar nuevo producto</label>
+			</div>
+			<form class="formulario" id="form-producto">
+				<div class="casilla__input" id="url">
+					<input type="text" class="input"  name="url" required>
+					<span class="label">URL de la imagen</span>
+					<p class="error">Error en direccion URL de la imagen</p>
+				</div>
+				<div class="casilla__input" id="categoria">
+					<input type="text" class="input"  name="categoria" required>
+					<span class="label">Categoria</span>
+					<p class="error">Error ingrese la categoria correctamente</p>
+				</div>
+				<div class="casilla__input" id="nombre">
+					<input type="text" class="input"  name="nombre" maxlength="20" required>
+					<span class="label">Nombre del producto</span>
+					<p class="error">Error debe ingresar un nombre</p>
+				</div>
+				<div class="casilla__input" id="precio">
+					<input type="text" class="input"  name="precio" required>
+					<span class="label">Pecio del producto</span>
+					<p class="error">Error debe ingresar un valor numerico</p>
+				</div>
+				<div class="casilla__input" id="descripcion">
+					<input type="text" class="textarea" name="descripcion" maxlength="150" placeholder="Descripcion del producto">
+				</div>
+				<button type="submit" class="button">Agregar producto</button>
+				<div class="exito-general">
+					<p><i class="fa-solid fa-thumbs-up"></i> Formulario enviado </p>
+				</div>
+			</form>	
+		</div>
+	</section>
+	
+	<section class="container__contacto">
+		<div class="contacto__all-info">
+			<div class="all-info__quienes">
+				<img class="logo__alura" src="img/logo_alura.png" alt="">
+				<ul class="quienes_somos__links">
+					<li class="links__items"><a href="#">Quienes somos</a></li>
+					<li class="links__items"><a href="#">Politica de privacidad</a></li>
+					<li class="links__items"><a href="#">Programa de fidelidad</a></li>
+					<li class="links__items"><a href="#">Nuestras tiendas</a></li>
+					<li class="links__items"><a href="#">Quiero ser franquiciado</a></li>
+					<li class="links__items"><a href="#">Anuncie aqui</a></li>
+				</ul>
+			</div>
+			<div class="formulario__contacto">
+				<div class="formulario__titulo">
+					<label>Habla con nosotros</label>
+				</div>
+				<form class="formulario" id="form-contacto">
+					<div class="casilla__input">
+						<input type="text" class="input"placeholder=" " name="contacto" maxlength="40" required>
+						<span class="label">Nombre</span>
+					</div>
+					<div class="casilla__input">
+						<textarea id="" class="textarea" placeholder="Mensaje..." maxlength="120" required></textarea>
+					</div>
+					<button type="submit" class="button">Enviar mensaje</button>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="footer__develop">
+			<span class="develop__repositorio" ><a href="#"><img src="img/ariLogo.ico" alt="ICONS andairaDM"> <img src="img/UBA.ico" alt="icons UbA"></a></span>
+			<span class="develop__nombre">ANDAIRADM 2021</span>
+		</div>
+	</footer>
+	
+			<!-- modo modal -->
+	<section class="modal">
+		
+	</section>
+	
+	<section class="container__update">
+		<div class="update-section">
+			<div class="formulario__titulo">
+				<label>Actualizar producto</label>
+			</div>
+			<form class="formulario" id="form-udpate">
+				<div class="casilla__input" id="url">
+					<input type="text" class="input"  name="url" required>
+					<span class="label">URL de la imagen</span>
+					<p class="error">Error en direccion URL de la imagen</p>
+				</div>
+				<div class="casilla__input" id="categoria">
+					<input type="text" class="input"  name="categoria" required>
+					<span class="label">Categoria</span>
+					<p class="error">Error ingrese la categoria correctamente</p>
+				</div>
+				<div class="casilla__input" id="nombre">
+					<input type="text" class="input"  name="nombre" maxlength="20" required>
+					<span class="label">Nombre del producto</span>
+					<p class="error">Error debe ingresar un nombre</p>
+				</div>
+				<div class="casilla__input" id="precio">
+					<input type="text" class="input"  name="precio" required>
+					<span class="label">Pecio del producto</span>
+					<p class="error">Error debe ingresar un valor numerico</p>
+				</div>
+				<div class="casilla__input" id="descripcion">
+					<input type="text" class="input" name="descripcion" maxlength="150" placeholder="Descripcion del producto">
+				</div>
+				<button type="submit" class="button">Actualizar</button>
+				<div class="exito-general">
+					<p><i class="fa-solid fa-thumbs-up"></i> Informacion actualizada </p>
+				</div>
+			</form>		
+		</div>
+	</section>
+	
+	<script  type="module" src="js/botones_head.js"></script>
+	<script  type="module" src="js/main.js"></script>
+	<!-- <script type="module" src="js/botonesAcceso.js"></script>
+	<script type="module" src="js/controlProductos.js"></script>
+	<script type="module" src="js/validaciones.js"></script> -->
+<body>
+</html>
